@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  body {
+    @apply bg-gray-100 font-roboto;
+  }
+
+  .sidebar-nav {
+    @apply flex items-center text-2xl gap-2 w-full transition-all p-3 rounded-md hover:bg-gray-200;
+  }
+
+  .sidebar-nav-active {
+    @apply bg-gray-200;
+  }
+
+  .dashboard-card {
+    @apply w-full bg-white shadow-2xl rounded-xl;
+  }
+
+  .top-card {
+    @apply py-3 px-10 grid grid-cols-[auto_1fr] gap-10  row-span-1 items-center;
+  }
+
+  .card {
+    @apply flex flex-col  row-span-2 w-full;
+  }
+
+  .dashboard-card-title {
+    @apply text-xl font-medium text-gray-900 py-3 px-5;
+  }
+}
